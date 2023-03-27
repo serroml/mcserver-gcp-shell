@@ -66,7 +66,7 @@ fi
 
 7. Now you can run your server, run the script with:
 
-      ./mcserver.sh --start
+       ./mcserver.sh --start
 
 You can stop the server with:
 
