@@ -44,3 +44,5 @@ https://console.cloud.google.com
        ./mcserver.sh --stop
 
 The script will only work correctly when you have created a playit.gg account, logged in and created the tunnel in your playit.gg account.
+
+The docker-compose file contains the configuration of how the container will be created to run for your server, if you want to run a specific version you must edit it and change the version you want by editing the line "VERSION: ".
