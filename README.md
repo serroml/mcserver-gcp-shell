@@ -62,7 +62,7 @@ fi
 
 6. Assign execution permissions to the script with:
 
-      chmod u+x mcserver.sh
+       chmod u+x mcserver.sh
 
 7. Now you can run your server, run the script with:
 
