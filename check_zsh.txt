@@ -1,0 +1,30 @@
+# Check if ZSH is installed
+
+check_zsh () {
+
+ if [[ -f $(which zsh) ]]; then
+
+        return 0
+
+
+else
+
+        return 1
+
+
+fi
+
+}
+
+
+check_zsh
+
+
+if (( $? != 0 )); then
+
+        sudo apt update &>/dev/null
+        
+        sudo apt install zsh -y &>/dev/null
+
+
+fi
