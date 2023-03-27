@@ -15,10 +15,9 @@ https://console.cloud.google.com
 2. Open the web terminal (at the top right)
 
 
-3. Edit your .bashrc with the following:
+3. Clone the repository into your home directory:
 
-
-        cat ~/check_zsh.txt >> .bashrc
+        git clone https://github.com/serroml/mcserver-gcp-shell.git
 
 
 4. With this change every time you start the server it will take a few seconds until you can type in your web terminal
@@ -26,7 +25,7 @@ https://console.cloud.google.com
 
 5. Clone the repository into your home directory:
 
-        git clone https://github.com/serroml/mcserver-gcp-shell.git
+        cat ~/check_zsh.txt >> .bashrc
 
 
 6. Now move the zsh script and the docker-compose to your home directory
