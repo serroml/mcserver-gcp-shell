@@ -41,7 +41,15 @@ With this change every time you start the server it will take a few seconds unti
 7. Assign execution permissions to the script with:
 
        chmod u+x mcserver.sh
-       
+
+
+The script has only two options:
+
+        mcserverpatata1@cloudshell:~$ ./mcserver.sh
+
+        [!] Ayuda: ./mcserver.sh [--start] [--stop]
+        
+        
 
 8. Now you can run your server, run the script with:
 
