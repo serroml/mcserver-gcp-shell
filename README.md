@@ -66,10 +66,10 @@ fi
 
 7. Now you can run your server, run the script with:
 
-./mcserver.sh --start
+      ./mcserver.sh --start
 
 You can stop the server with:
 
-./mcserver.sh --stop
+      ./mcserver.sh --stop
 
 The script will only work correctly when you have created a playit.gg account, logged in and created the tunnel in your playit.gg account.
