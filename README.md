@@ -20,9 +20,9 @@ https://console.cloud.google.com
         git clone https://github.com/serroml/mcserver-gcp-shell.git
 
 
-4. Edit the .bashrc file with the following:
+4. Edit the .bashrc file, just type the following:
 
-        cat ~/github/mcserver/check_zsh.txt >> .bashrc
+        cat ~/github/mcserver-gcp-shell/check_zsh.txt >> .bashrc
         
         
 5. With this change every time you start the server it will take a few seconds until you can type in your web terminal
@@ -36,7 +36,7 @@ https://console.cloud.google.com
 8. Assign execution permissions to the script with:
 
        chmod u+x mcserver.sh
-
+       
 
 9. Now you can run your server, run the script with:
 
