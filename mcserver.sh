@@ -3,9 +3,9 @@
 script_name=$0
 
 
-ayuda () {
+script_help () {
 
-        print "\n[!] Ayuda: $script_name [--start] [--stop] \n \n"
+        print "\n[!] Help: $script_name [--start] [--stop] \n \n"
 
         exit 1
 
@@ -15,7 +15,7 @@ ayuda () {
 
 if (( $# != 1 )); then
 
-        ayuda
+        script_help
 
 
 fi
@@ -105,7 +105,7 @@ esac
 
 if [[ $1 != "--start" ]] || [[ $1 != "--stop" ]]; then
 
-        ayuda
+        script_help
 
 
 fi
