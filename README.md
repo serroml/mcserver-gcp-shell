@@ -30,25 +30,25 @@ https://console.cloud.google.com
         cat ~/check_zsh.txt >> .bashrc
         
         
-6. With this change every time you start the server it will take a few seconds until you can type in your web terminal
+With this change every time you start the server it will take a few seconds until you can type in your web terminal
 
 
-7. Edit the .bashrc file, just type the following:
+6. Edit the .bashrc file, just type the following:
 
         cat ~/check_zsh.txt >> .bashrc
 
 
-8. Assign execution permissions to the script with:
+7. Assign execution permissions to the script with:
 
        chmod u+x mcserver.sh
        
 
-9. Now you can run your server, run the script with:
+8. Now you can run your server, run the script with:
 
        ./mcserver.sh --start
 
 
-10. You can stop the server with:
+9. You can stop the server with:
 
         ./mcserver.sh --stop
 
