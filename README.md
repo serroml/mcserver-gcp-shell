@@ -24,24 +24,30 @@ https://console.cloud.google.com
 4. With this change every time you start the server it will take a few seconds until you can type in your web terminal
 
 
-5. Clone the repository into your home directory and move the ZSH script and 
+5. Clone the repository into your home directory:
+
+        git clone https://github.com/serroml/mcserver-gcp-shell.git
 
 
 6. Now move the zsh script and the docker-compose to your home directory
 
        mv ~/mc-server-gcp-shell* ~/
 
+
 7. Assign execution permissions to the script with:
 
        chmod u+x mcserver.sh
+
 
 8. Now you can run your server, run the script with:
 
        ./mcserver.sh --start
 
+
 9. You can stop the server with:
 
        ./mcserver.sh --stop
+
 
 The script will only work correctly when you have created a playit.gg account, logged in and created the tunnel in your playit.gg account.
 
