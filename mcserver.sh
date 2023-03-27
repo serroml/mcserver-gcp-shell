@@ -68,7 +68,7 @@ case $1 in
 
                         while (($? != 0)); do
 
-                                print "\n[!] Failed to create the tunnel, retrying......"
+                                print "\n[!] Failed to create the tunnel, retrying..."
 
                                 sleep 2
 
