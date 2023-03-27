@@ -27,7 +27,7 @@ https://console.cloud.google.com
 5. Clone the repository into your home directory and move the ZSH script and 
 
 
-6. Now copy the zsh script and the docker-compose to your home directory
+6. Now move the zsh script and the docker-compose to your home directory
 
        mv ~/mc-server-gcp-shell* ~/
 
