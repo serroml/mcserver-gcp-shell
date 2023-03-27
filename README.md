@@ -45,9 +45,15 @@ With this change every time you start the server it will take a few seconds unti
 
 The script has only two options:
 
-        mcserverpatata1@cloudshell:~$ ./mcserver.sh
+        your-user@cloudshell:~$ ./mcserver.sh
 
         [!] Ayuda: ./mcserver.sh [--start] [--stop]
+
+
+mcserverpatata1@cloudshell:~$
+
+
+mcserverpatata1@cloudshell:~$
         
         
 
