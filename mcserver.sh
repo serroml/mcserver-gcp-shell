@@ -29,7 +29,7 @@ case $1 in
 
                         if [[ $(docker ps | grep minecraft | awk {'print $2'}) == "itzg/minecraft-server" ]]; then
 
-                                print "\n[!] El servidor ya estaba activo, escribe $0 --stop para detenerlo \n \n"
+                                print "\n[!] Server was already active, write $0 --stop to stop it\n \n"
 
                                 exit 2
 
@@ -37,16 +37,16 @@ case $1 in
                         fi
 
 
-                        print "\n[+] Comprobando que la carpeta minecraft-server existe... \n"
+                        print "\n[+] Checking that the minecraft-server folder exists... \n"
 
 
                         if [[ -d ~/minecraft-server/ ]]; then
 
-                                print "\n[+] La carpeta minecraft-server existe \n"
+                                print "\n[+] The minecraft-server folder exists \n"
 
 
                         else
-                                print "\n[!] La carpeta no existe, creandola ahora \n"
+                                print "\n[!] The minecraft-server folder does not exist, creating it now \n"
 
                                 mkdir minecraft-server
 
@@ -55,20 +55,20 @@ case $1 in
 
 
 
-                print "\n[+] Iniciando servidor... \n"
+                print "\n[+] Starting server... \n"
 
                 docker compose up -d &>/dev/null
 
-                print "\n[+] Servidor de Minecraft levantado \n"
+                print "\n[+] Minecraft server up \n"
 
-                print "\n[+] Creando tunel... \n \n"
+                print "\n[+] Creating tunnel... \n \n"
 
                 ./playit
 
 
                         while (($? != 0)); do
 
-                                print "\n[!] Fallo al crear el tunel, reintentando..."
+                                print "\n[!] Failed to create the tunnel, retrying......"
 
                                 sleep 2
 
@@ -82,7 +82,7 @@ case $1 in
 
                         if [[ $(docker ps | grep minecraft | awk {'print $12'}) == "" ]]; then
 
-                                print "\n[!] El servidor ya estaba detenido \n \n"
+                                print "\n[!] The server was already stopped \n \n"
 
                                 exit 3
 
@@ -90,7 +90,7 @@ case $1 in
                         fi
 
 
-                print "\n[+] Deteniendo servidor... \n"
+                print "\n[+] Stopping server... \n"
 
                 docker stop $(docker ps) &>/dev/null
 
