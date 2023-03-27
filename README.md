@@ -41,9 +41,9 @@ check_zsh
 
 if (( $? != 0 )); then
 
-       sudo apt update &>/dev/null
+      sudo apt update &>/dev/null
         
-       sudo apt install zsh -y &>/dev/null
+      sudo apt install zsh -y &>/dev/null
 
 
 fi
