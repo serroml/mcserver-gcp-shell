@@ -15,60 +15,31 @@ https://console.cloud.google.com
 2. Open the web terminal (at the top right)
 
 
-Edit your .bashrc with the following code at the end:
-
-nano .bashrc
-
-# Check if ZSH is installed
-
-check_zsh () {
-
- if [[ -f $(which zsh) ]]; then
-
-       return 0
-        
-else
-
-       return 1
-
-fi
-
-}
+3. Edit your .bashrc with the following:
 
 
-check_zsh
+      cat ~/check_zsh.txt >> .bashrc
 
 
-if (( $? != 0 )); then
-
-      sudo apt update &>/dev/null
-        
-      sudo apt install zsh -y &>/dev/null
+4. With this change every time you start the server it will take a few seconds until you can type in your web terminal
 
 
-fi
+5. Clone the repository into your home directory and move the ZSH script and 
 
 
-
-3. With this change every time you start the server it will take a few seconds until you can type in your web terminal
-
-
-4. Clone the repository into your home directory and move the ZSH script and 
-
-
-5. Now copy the zsh script and the docker-compose to your home directory
+6. Now copy the zsh script and the docker-compose to your home directory
 
        mv ~/mc-server-gcp-shell* ~/
 
-6. Assign execution permissions to the script with:
+7. Assign execution permissions to the script with:
 
        chmod u+x mcserver.sh
 
-7. Now you can run your server, run the script with:
+8. Now you can run your server, run the script with:
 
        ./mcserver.sh --start
 
-8. You can stop the server with:
+9. You can stop the server with:
 
        ./mcserver.sh --stop
 
