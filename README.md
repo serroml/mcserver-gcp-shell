@@ -58,11 +58,11 @@ fi
 
 5. Now copy the zsh script and the docker-compose to your home directory
 
- mv ~/mc-server-gcp-shell* ~/
+       mv ~/mc-server-gcp-shell* ~/
 
 6. Assign execution permissions to the script with:
 
- chmod u+x mcserver.sh
+      chmod u+x mcserver.sh
 
 7. Now you can run your server, run the script with:
 
