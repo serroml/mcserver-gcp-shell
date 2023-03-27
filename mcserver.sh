@@ -73,6 +73,7 @@ case $1 in
                                 sleep 2
 
                                 ./playit
+
                         done
 
                 ;;
