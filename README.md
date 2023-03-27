@@ -48,12 +48,6 @@ The script has only two options:
         your-user@cloudshell:~$ ./mcserver.sh
 
         [!] Ayuda: ./mcserver.sh [--start] [--stop]
-
-
-mcserverpatata1@cloudshell:~$
-
-
-mcserverpatata1@cloudshell:~$
         
         
 
