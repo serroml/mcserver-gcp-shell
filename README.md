@@ -68,7 +68,7 @@ fi
 
        ./mcserver.sh --start
 
-You can stop the server with:
+8. You can stop the server with:
 
        ./mcserver.sh --stop
 
