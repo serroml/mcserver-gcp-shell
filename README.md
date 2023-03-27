@@ -20,17 +20,22 @@ https://console.cloud.google.com
         git clone https://github.com/serroml/mcserver-gcp-shell.git
 
 
-4. Edit the .bashrc file, just type the following:
-
-        cat ~/github/mcserver-gcp-shell/check_zsh.txt >> .bashrc
-        
-        
-5. With this change every time you start the server it will take a few seconds until you can type in your web terminal
-
-
-7. Now move the zsh script and the docker-compose to your home directory
+4. Now move the zsh script and the docker-compose to your home directory
 
        mv ~/mc-server-gcp-shell* ~/
+       
+
+5. Edit the .bashrc file, just type the following:
+
+        cat ~/check_zsh.txt >> .bashrc
+        
+        
+6. With this change every time you start the server it will take a few seconds until you can type in your web terminal
+
+
+7. Edit the .bashrc file, just type the following:
+
+        cat ~/check_zsh.txt >> .bashrc
 
 
 8. Assign execution permissions to the script with:
