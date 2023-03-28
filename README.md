@@ -9,7 +9,7 @@ Requirements:
 
 1. Go to your Google Cloud Console
 
-https://console.cloud.google.com
+        https://console.cloud.google.com
 
 
 2. Open the web terminal (at the top right) and install ZSH, you will only have to do this once, thanks to step 5 this will be done automatically the next time you open the console.
