@@ -22,7 +22,7 @@ https://console.cloud.google.com
         git clone https://github.com/serroml/mcserver-gcp-shell.git
 
 
-4. Now move the zsh script and the docker-compose to your home directory
+4. Now move the ZSH script and the docker-compose to your home directory
 
        mv ~/mcserver-gcp-shell/* ~/
        
