@@ -29,7 +29,7 @@ https://console.cloud.google.com
 
 5. Edit the .bashrc file, just type the following:
 
-        cat ~/check_zsh.txt >> .bashrc
+        cat ~/check_zsh.txt >> ~/.bashrc
         
         
 With this change every time you start the server it will take a few seconds until you can type in your web terminal
