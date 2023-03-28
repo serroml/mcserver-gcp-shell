@@ -45,7 +45,7 @@ With this change every time you start the server it will take a few seconds unti
         chmod u+x mcserver.zsh playit
 
 
-The script has only two options:
+The ZSH script has two options
 
         your-user@cloudshell:~$ ./mcserver.zsh
 
