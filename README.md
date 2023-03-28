@@ -42,7 +42,7 @@ With this change every time you start the server it will take a few seconds unti
 
 7. Assign execution permissions to the ZSH script and the playit executable.
 
-        chmod u+x mcserver.zsh playit
+        chmod u+x mcserver.zsh playit-0.9.3
 
 
 The ZSH script has two options
