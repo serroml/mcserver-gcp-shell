@@ -42,7 +42,7 @@ With this change every time you start the server it will take a few seconds unti
 
 The script has only two options:
 
-        your-user@cloudshell:~$ ./mcserver.sh
+        your-user@cloudshell:~$ ./mcserver.zsh
 
         [!] Help: ./mcserver.zsh [--start] [--stop]
         
