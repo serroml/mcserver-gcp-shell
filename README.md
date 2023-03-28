@@ -42,7 +42,7 @@ The script has only two options:
 
         your-user@cloudshell:~$ ./mcserver.sh
 
-        [!] Ayuda: ./mcserver.sh [--start] [--stop]
+        [!] Help: ./mcserver.sh [--start] [--stop]
         
         
 
