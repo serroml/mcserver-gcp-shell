@@ -35,9 +35,19 @@ https://console.cloud.google.com
 With this change every time you start the server it will take a few seconds until you can type in your web terminal
 
 
-6. Assign execution permissions to the script with:
+6. Download playit in your home directory:
 
-       chmod u+x mcserver.zsh
+        wget https://github.com/playit-cloud/playit-agent/releases/download/v0.9.3/playit-0.9.3
+
+
+7. Assign execution permissions to the playit executable with:
+
+        chmod u+x playit
+
+        
+8. Assign execution permissions to the ZSH script with:
+
+        chmod u+x mcserver.zsh
 
 
 The script has only two options:
@@ -48,12 +58,12 @@ The script has only two options:
         
         
 
-7. Now you can run your server, run the script with:
+9. Now you can run your server, run the script with:
 
        ./mcserver.zsh --start
 
 
-8. You can stop the server with:
+10. You can stop the server with:
 
         ./mcserver.zsh --stop
 
