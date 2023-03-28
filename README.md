@@ -40,14 +40,9 @@ With this change every time you start the server it will take a few seconds unti
         wget https://github.com/playit-cloud/playit-agent/releases/download/v0.9.3/playit-0.9.3
 
 
-7. Assign execution permissions to the playit executable with:
+7. Assign execution permissions to the ZSH script and the playit executable.
 
-        chmod u+x playit
-
-        
-8. Assign execution permissions to the ZSH script with:
-
-        chmod u+x mcserver.zsh
+        chmod u+x mcserver.zsh playit
 
 
 The script has only two options:
