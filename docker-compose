@@ -25,7 +25,7 @@ services:
         tty: true
         stdin_open: true
         volumes:
-            - ./minecraft-server:/data
+            - ~/minecraft-server:/data
 
         ports:
             - "25565:25565"
