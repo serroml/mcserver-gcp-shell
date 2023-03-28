@@ -37,25 +37,25 @@ With this change every time you start the server it will take a few seconds unti
 
 6. Assign execution permissions to the script with:
 
-       chmod u+x mcserver.sh
+       chmod u+x mcserver.zsh
 
 
 The script has only two options:
 
         your-user@cloudshell:~$ ./mcserver.sh
 
-        [!] Help: ./mcserver.sh [--start] [--stop]
+        [!] Help: ./mcserver.zsh [--start] [--stop]
         
         
 
 7. Now you can run your server, run the script with:
 
-       ./mcserver.sh --start
+       ./mcserver.zsh --start
 
 
 8. You can stop the server with:
 
-        ./mcserver.sh --stop
+        ./mcserver.zsh --stop
 
 
 The script will only work correctly when you have an account at https://playit.gg, logged in and created the tunnel in your playit.gg account.
