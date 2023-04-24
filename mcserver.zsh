@@ -96,7 +96,7 @@ case $1 in
 
                         print "\n[+] Stopping server... \n"
 
-                        docker stop $(docker ps | grep itzg/minecraft-server | awk {'print $1'}) &>/dev/null
+                        docker stop $(docker ps | grep -w itzg/minecraft-server | awk {'print $1'}) &>/dev/null
 
                         docker system prune -f &>/dev/null
 
