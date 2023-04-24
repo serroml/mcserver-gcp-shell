@@ -27,7 +27,7 @@ case $1 in
                 "--start")
 
 
-                        if [[ $(docker ps | grep minecraft | awk {'print $2'}) == "itzg/minecraft-server" ]]; then
+                        if [[ $(docker ps | grep minecraft | awk {'print $12'}) == "itzg/minecraft-server" ]]; then
 
                                 print "\n[!] Server was already active, write $0 --stop to stop it\n \n"
 
@@ -96,7 +96,7 @@ case $1 in
 
                         print "\n[+] Stopping server... \n"
 
-                        docker stop $(docker ps) &>/dev/null
+                        docker stop $(docker ps | grep itzg/minecraft-server | awk {'print $1'}) &>/dev/null
 
                         docker system prune -f &>/dev/null
 
