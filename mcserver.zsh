@@ -74,7 +74,7 @@ case $1 in
 
                                 sleep 2
 
-                                ./playit
+                                ./playit-0.9.3
 
                         done
                         
