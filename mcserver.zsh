@@ -55,17 +55,17 @@ case $1 in
 
 
 
-                print "\n[+] Starting server... \n"
+                        print "\n[+] Starting server... \n"
 
-                docker compose up -d &>/dev/null
+                        docker compose up -d &>/dev/null
 
-                print "\n[+] Minecraft server up \n"
+                        print "\n[+] Minecraft server up \n"
 
-                print "\n[+] Creating tunnel... \n \n"
+                        print "\n[+] Creating tunnel... \n \n"
                 
-                sleep 2
+                        sleep 2
 
-                ./playit
+                        ./playit
 
 
                         while (($? != 0)); do
@@ -77,8 +77,9 @@ case $1 in
                                 ./playit
 
                         done
-
+                        
                 ;;
+
 
                 "--stop")
 
@@ -93,13 +94,13 @@ case $1 in
                         fi
 
 
-                print "\n[+] Stopping server... \n"
+                        print "\n[+] Stopping server... \n"
 
-                docker stop $(docker ps) &>/dev/null
+                        docker stop $(docker ps) &>/dev/null
 
-                docker system prune -f &>/dev/null
+                        docker system prune -f &>/dev/null
 
-                exit 4
+                        exit 4
 
                 ;;
 
