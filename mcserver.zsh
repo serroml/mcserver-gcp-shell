@@ -62,13 +62,13 @@ case $1 in
                         print "\n[+] Minecraft server up \n"
 
                         print "\n[+] Creating tunnel... \n \n"
-                
+
                         sleep 2
 
                         ./playit-0.9.3
 
 
-                        while (($? != 0)); do
+                        while (( $? != 0 )); do
 
                                 print "\n[!] Failed to create the tunnel, retrying..."
 
@@ -77,7 +77,7 @@ case $1 in
                                 ./playit-0.9.3
 
                         done
-                        
+
                 ;;
 
 
