@@ -16,15 +16,19 @@ fi
 
 }
 
+echo -e "\n[!] Checking that ZSH is installed \n"
+
 
 check_zsh
 
 
 if (( $? != 0 )); then
 
+        echo -e "\n[!] ZSH is not installed, installing it now \n"
+
         sudo apt update &>/dev/null
         
-        sudo apt install zsh -y &>/dev/null
+        sudo apt install zsh -y &>/dev/null && echo -e "\n[+] ZSH has been successfully installed \n" || echo -e "\n[!] Error installing ZSH \n"
 
 
 fi
