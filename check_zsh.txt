@@ -30,5 +30,8 @@ if (( $? != 0 )); then
         
         sudo apt install zsh -y &>/dev/null && echo -e "\n[+] ZSH has been successfully installed \n" || echo -e "\n[!] Error installing ZSH \n"
 
+else
+        echo -e "\n[+] ZSH is installed \n"
+
 
 fi
