@@ -35,6 +35,7 @@ case $1 in
 
                         fi
 
+
                         print "\n[+] Checking that the minecraft-server folder exists... \n"
 
                         if [[ -d ~/minecraft-server/ ]]; then
@@ -48,7 +49,6 @@ case $1 in
 
 
                         fi
-
 
 
                         print "\n[+] Starting server... \n"
