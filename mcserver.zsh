@@ -100,9 +100,8 @@ case $1 in
                 ;;
 
 
-                "*")
-
-                        ayuda
+                *)
+                        script_help
 
                 ;;
 
