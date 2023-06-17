@@ -28,7 +28,7 @@ case $1 in
 
                         if [[ $(docker ps | grep -w itzg/minecraft-server | awk {'print $12'}) == "itzg/minecraft-server" ]]; then
 
-                                print "\n[!] Server was already active, write $0 --stop to stop it\n \n"
+                                print "\n[!] The server was already active \n \n"
 
                                 exit 2
 
