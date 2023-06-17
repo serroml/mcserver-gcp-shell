@@ -16,7 +16,7 @@ fi
 
 }
 
-echo -e "\n[!] Checking that ZSH is installed \n"
+echo -e "\n[+] Checking that ZSH is installed \n"
 
 
 check_zsh
