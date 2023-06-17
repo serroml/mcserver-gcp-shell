@@ -26,8 +26,7 @@ case $1 in
 
                 "--start")
 
-
-                        if [[ $(docker ps | grep minecraft | awk {'print $12'}) == "itzg/minecraft-server" ]]; then
+                        if [[ $(docker ps | grep -w itzg/minecraft-server | awk {'print $12'}) == "itzg/minecraft-server" ]]; then
 
                                 print "\n[!] Server was already active, write $0 --stop to stop it\n \n"
 
@@ -36,14 +35,11 @@ case $1 in
 
                         fi
 
-
                         print "\n[+] Checking that the minecraft-server folder exists... \n"
-
 
                         if [[ -d ~/minecraft-server/ ]]; then
 
                                 print "\n[+] The minecraft-server folder exists \n"
-
 
                         else
                                 print "\n[!] The minecraft-server folder does not exist, creating it now \n"
@@ -83,8 +79,7 @@ case $1 in
 
                 "--stop")
 
-
-                        if [[ $(docker ps | grep minecraft | awk {'print $12'}) == "" ]]; then
+                        if [[ $(docker ps | grep -w itzg/minecraft-server | awk {'print $12'}) == "" ]]; then
 
                                 print "\n[!] The server was already stopped \n \n"
 
@@ -104,12 +99,12 @@ case $1 in
 
                 ;;
 
+
+                "*")
+
+                        ayuda
+
+                ;;
+
+
 esac
-
-
-if [[ $1 != "--start" ]] || [[ $1 != "--stop" ]]; then
-
-        script_help
-
-
-fi
