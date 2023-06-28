@@ -23,7 +23,6 @@ fi
 
 case $1 in
 
-
                 "--start")
 
                         if [[ $(docker ps | grep -w itzg/minecraft-server | awk {'print $12'}) == "itzg/minecraft-server" ]]; then
@@ -104,6 +103,5 @@ case $1 in
                         script_help
 
                 ;;
-
 
 esac
